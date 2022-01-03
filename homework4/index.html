@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+ 
+    <link rel="stylesheet" href="style.css"> 
+ 
+    <style> 
+        .box { 
+            width: 100px; 
+            height: 100px; 
+            background: #E17AC9; 
+            cursor: pointer; 
+        } 
+ 
+        .box-color { 
+            background: black; 
+            animation: move 12s; 
+            position: absolute; 
+        } 
+ 
+        @keyframes move { 
+            0% { 
+                top: 0; 
+                left: 0; 
+            } 
+            25% { 
+                top: 3%; 
+                left: 90%; 
+                transform: rotate(90deg) scale(1.5); 
+                background: #7A96E1; 
+            } 
+            50% { 
+                top: 90%; 
+                left: 90%; 
+                transform: rotate(180deg) scale(1); 
+                background: #7A96E1; 
+            } 
+            75% { 
+                top: 90%; 
+                left: 3%; 
+                transform: rotate(270deg) scale(0.5); 
+                background: #7A96E1; 
+            } 
+            100% { 
+                top: 3%; 
+                left: 3%; 
+                transform: rotate(360deg) scale(1); 
+                background: #7A96E1; 
+            } 
+        } 
+    </style> 
+</head> 
+ 
+<body> 
+    <div class="box" id="boxId"></div> 
+    <!-- <div class = "box-color"></div> --> 
+    <script src="script.js"></script> 
+</body> 
+ 
+</html>
+
